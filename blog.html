@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BLOG</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="blog.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/02500b51e8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- SURROUNDING BOX -->
+    <div class="megaBox">
+
+            <!--MENU BAR - flexbox -->
+            <div class="menuBar">
+                <div class="home">
+                    <a href="index.html" class="logo">BREAKFAST JAMS</a>
+                </div>
+
+                <div class="menu">
+                    <a href="#" class="menuBtn">Blog</a>
+                    <a href="#" class="menuBtn">Lookbook</a>
+                    <a href="#" class="menuBtn">About</a>
+                    <a href="#" class="menuBtn">Contact</a>
+                    <section class="burger">
+                        <a onclick="openNav()"><i class="fas fa-bars"></i></a>
+                    </section>
+                </div>
+            </div>
+
+            <!-- SIDENAV -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">Lookbook</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!--MAIN GRID -->
+            <div class="container">
+
+                <!-- BLOG AREA -->
+                <div class="blogBox">
+
+                    <div class="cardBox">
+
+                        <div class="card"><a href="post.html">
+                            <div class="topImg">
+                                <img src="images/image1.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Blueberry Toast</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image2.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Chia Cheesecake</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image17.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Chocolate Waffle</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image14.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Buttery Pancakes</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image3.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Avocado Toast</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image4.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Home Made Coffee</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image16.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Morning Outside</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image8.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">New Morning New Place</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image9.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">French Toast</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="topImg">
+                                <img src="images/image10.jpg" alt="image">
+                            </div>
+                            <div class="card-details">
+                                <h2 class="cardDate">10/01/2020</h2>
+                                <h2 class="cardTitle">Brunch Together</h2>
+                                <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                                <button href="post.html" class="readMore">read more</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <!-- FOOTER -->
+            <div class="footer">
+
+                <h3>Subscribe to our Newsletter.</h3>
+                <div class="subscribe">
+                    <form action=""> 
+                        <input type="text" placeholder="E-mail" name="email" required>
+                        <input type="submit" value="Sign Up">
+                    </form>
+                </div>  
+
+                <div class="social">
+                    <i class="fab fa-twitter-square" style="font-size: 2rem;color:rgb(206, 101, 118);"></i>
+                <i class="fab fa-facebook-square" style="font-size: 2rem;color:rgb(206, 101, 118);"></i>
+                <i class="fab fa-linkedin" style="font-size: 2rem;color:rgb(206, 101, 118);"></i>
+                </div>
+                
+            </div>
+        
+            <!-- REST -->
+            <div class="rest"></div>
+
+    </div>
+
+    <!--SIDENAV - script -->
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "180px";
+        }
+            
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

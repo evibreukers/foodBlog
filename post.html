@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POST</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="post.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/02500b51e8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- SURROUNDING BOX -->
+<div class="megaBox">
+
+    <!--MENU BAR - flexbox -->
+        
+        <div class="menuBar">
+
+            <div class="home">
+                <a href="index.html" class="logo">BREAKFAST JAMS</a>
+            </div>
+
+            <div class="menu">
+                <a href="blog.html" class="menuBtn">Blog</a>
+                <a href="#" class="menuBtn">Lookbook</a>
+                <a href="#" class="menuBtn">About</a>
+                <a href="#" class="menuBtn">Contact</a>
+                <section class="burger">
+                    <a onclick="openNav()"><i class="fas fa-bars"></i></a>
+                </section>
+            </div>
+
+        </div>
+
+    <!-- SIDENAV -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="blog.html">Blog</a>
+            <a href="#">Lookbook</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+    <!-- MAIN GRID -->
+    <div class="container">
+
+        <!-- BLOG AREA - nested grid -->
+        <div class="blogBox"> 
+
+            <!-- TITLEBOX -->
+            <div class="titleBox">
+                <h1>Blueberry Toast</h1>
+            </div>
+
+            <!-- POSTBOX -->
+            <div class="postBox">
+
+                <div class="headImage"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum odio optio animi quo itaque error aliquam eaque voluptatibus impedit deserunt voluptatem, quod suscipit voluptatum officia aliquid dolor illum ducimus consectetur sed enim vel <strong>perspiciatis fugiat. Voluptatem, veniam, error doloribus praesentium vel, dignissimos eius excepturi eaque earum magnam maiores ducimus nobis. Hic quidem voluptas </strong> dicta repellat, delectus necessitatibus doloribus ratione ipsum accusantium minus id incidunt blanditiis. Repellat culpa consectetur dolores saepe exercitationem veritatis unde, sapiente minima voluptatibus similique sed nulla eos dignissimos modi corrupti adipisci at ab? Fugit, nobis quibusdam, aliquam aliquid commodi ab quo reprehenderit hic nihil voluptatem atque nulla </p>
+                
+                <div class="imgBlok"> <!-- flexbox -->
+                    <div class="imgBlok1"></div>
+                    <div class="imgBlok2"></div>
+                 </div>
+                 
+                <p>Obcaecati. Est cum quaerat deleniti numquam ducimus ex ea quasi tempore accusamus sed? Temporibus alias explicabo dignissimos impedit, atque debitis eaque unde, ad esse doloribus ullam. Maiores, veritatis explicabo. Labore unde vero?</p>
+    
+            </div>
+
+            <!-- SIDEBOX - flexbox -->
+            <div class="sideBox"> 
+
+                <h4>INGREDIENTS</h4>
+                <ul>
+                    <li>blablabla</li>
+                    <li>blablabla</li>
+                    <li>blablabla</li>
+                    <li>blablabla</li>
+                    <li>blablabla</li>
+                    <li>blablabla</li>
+                    <li>blablabla</li>
+                </ul>
+
+                <h4>PREPARING</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sint impedit ratione recusandae quaerat officia dolores amet nam voluptas, vitae autem est esse eos facilis cupiditate, accusamus eius architecto eligendi rerum inventore illum? In laboriosam corporis aperiam ducimus similique repellendus!</p>
+
+                <p>perferendis debitis quasi recusandae quia porro. Quasi sed, ea vero tenetur ipsam deserunt? Quia blanditiis <strong> omnis exercitationem atque accusamus, aperiam ullam </strong> ut quisquam praesentium explicabo cupiditate corrupti nam at porro ad aut repeunt voluptatem maiores porro beatae quisquam non amet. Dolor, iste animi. Repellendus nisi earum</p>
+
+                <h4>WRITTEN BY</h4>
+                <div class="authorBox"> <!-- flexbox -->
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="authorInfo">
+                        <p>Name: Evi Breukers - Title: Ms - Current company/school: Udacity student - Front-end web developer</p>
+                        <p>Short bio: digital design, motion graphic, web development, visual communication, foodphotography</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--REST-->
+        <div class="rest">
+
+            <h4>YOU MIGHT ALSO LIKE THIS</h4>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div class="topImg" id="img1"></div>
+                    <div class="card-details">
+                        <h2 class="cardDate">10/01/2020</h2>
+                        <h2 class="cardTitle">This is a Title</h2>
+                        <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                    </div>
+                </div> 
+                
+                <div class="card" id="smallScreen1">
+                    <div class="topImg" id="img2"></div>
+                    <div class="card-details">
+                        <h2 class="cardDate">10/01/2020</h2>
+                        <h2 class="cardTitle">This is a Title</h2>
+                        <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                    </div>
+                </div>
+
+                    <div class="card" id="smallScreen2">
+                        <div class="topImg" id="img3"></div>
+                        <div class="card-details">
+                            <h2 class="cardDate">10/01/2020</h2>
+                            <h2 class="cardTitle">This is a Title</h2>
+                            <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                        </div>
+                    </div> 
+
+                    <div class="card" id="mediumScreen">
+                        <div class="topImg" id="img4"></div>
+                        <div class="card-details">
+                            <h2 class="cardDate">10/01/2020</h2>
+                            <h2 class="cardTitle">This is a Title</h2>
+                            <h2 class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti voluptatibus cum, enim nihil ipsum consequuntur possimus porro, quis laborum odio illum perferendis aliquid.</h2>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+
+        <!--FOOTER-->
+        <div class="footer">
+            
+            <h3>Subscribe to our Newsletter.</h3>
+            <div class="subscribe">
+                <form action=""> 
+                    <input type="text" placeholder="E-mail" name="email" required>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>  
+
+            <div class="social">
+                <i class="fab fa-twitter-square" style="font-size: 2rem;color:rgb(206, 101, 118);"></i>
+                <i class="fab fa-facebook-square" style="font-size: 2rem;color:rgb(206, 101, 118);"></i>
+                <i class="fab fa-linkedin" style="font-size: 2rem;color:rgb(206, 101, 118);"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!--SIDENAV - script -->
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "180px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

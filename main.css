@@ -1,0 +1,241 @@
+html {
+    font-family: 'Avenir', 'Arial', 'Helvetica';
+    background-color: #f7deda;
+    color: #d68B54;
+}
+
+body, html { 
+    overflow-x:hidden; 
+}
+
+/* --- FONTS --- */
+
+p, li {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+strong {   
+    /* quote */
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(206, 101, 118);
+}
+
+h1 {
+    /* title HOME/POST */
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+h2  {
+    /* card */
+}
+
+h3 {
+    /* subtitle1 AVENIR BOLD */ 
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(206, 101, 118);
+}
+
+h4 {
+    /* subtitle2 AVENIR LETTER SPACING */
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    margin-bottom: -2px;
+}
+
+a {
+    text-decoration: none;
+    color:#d68B54;
+}
+
+/* --- SURROUNDING BOX --- */
+
+.megaBox {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* --- MENU BAR - flexbox --- */
+
+.menuBar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 90vw;
+    height: auto;
+    padding: 40px 0px;
+    background-color: #F7DEDA;
+}
+
+.home {
+    /* child .menuBar */
+    width: 40%;
+    text-align: left;
+}
+
+    a.logo {
+        font-size: 1.2rem;
+        letter-spacing: 0.4rem;
+    }
+
+.menu {
+    /* child .menuBar */
+    width: 60%;
+    text-align: right;
+}
+
+    a.menuBtn {
+        font-size: 1.2rem;
+        margin-left: 30px;
+        margin-right: 12px;
+        font-weight: 500;
+    }
+
+.burger {
+    /* replacing .menu */
+    display: none;
+    position: absolute;
+    z-index: +1;  
+}
+    .burger i {
+        font-size: 1.5rem;
+        margin-right: -10px;
+    }
+
+/* --- SIDE NAV --- */
+
+#mySidenav {
+    width: 0;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    height: 100%;
+    padding-top: 60px;
+    background-color: #f7deda;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.sidenav .closebtn {
+    font-size: 3rem;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    margin-left: 40px;
+}
+
+/* --- FOOTER --- */
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.footer h3 {
+    /* child .footer */
+    width: 40vw;
+    margin: 0 auto 40px auto;
+}
+
+.subscribe {
+    /* child .footer */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+    input[type=text] {
+        background-color: white;
+        border: 2.5px solid rgb(206, 101, 118);
+        font-family: 'Avenir', 'Arial', 'Helvetica';
+        font-size: 1rem;
+        color: grey;
+        outline: none;
+        padding: 13px 8px;
+    }
+
+    input[type=submit] {
+        background-color: rgb(206, 101, 118);
+        border: 2px solid rgb(206, 101, 118);
+        font-family: 'Avenir', 'Arial', 'Helvetica';
+        font-size: 1rem;
+        color: white;
+        outline: none;
+        padding: 13px 8px;
+    }
+
+.social > i {
+    margin: 10px 5px 20px 5px;
+}
+
+/* --- RESPONSIVE SCREENS --- */
+
+/* On screens that are 850px or less */
+@media screen and (max-width: 850px) {
+    /* --- MENU BAR --- */
+    .home {
+        width: 80%;
+        text-align: left;
+    }
+    
+    .menu {
+        width: 20%;
+        text-align: right;
+    }
+
+    a.menuBtn {
+        margin-left: 20px;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        z-index: +1;
+        right:12px;
+        top: 0;
+    }
+}
+  
+/* On screens that are 580px or less */
+@media screen and (max-width: 580px) {
+    /* --- FOOOTER --- */
+    .footer h3 {
+        width: 70vw;
+    }
+}
+
+/* On screens that are 400px or less */
+@media screen and (max-width: 400px) {
+    /* --- MENU BAR --- */
+    .home {
+        width: 90%;
+        text-align: left;
+    }
+    
+    .menu {
+        width: 10%;
+        text-align: right;
+    }
+}

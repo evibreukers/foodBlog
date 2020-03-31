@@ -1,0 +1,88 @@
+/* MAIN GRID */
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 100px 100px; 
+    grid-template-areas: 
+    "b b b b b b b b b b b b"
+    "f f f f f f f f f f f f"
+    "r r r r r r r r r r r r";
+}
+
+.intro {
+    grid-area: b;
+}
+
+.footer {
+    grid-area: f;
+}
+
+.rest {
+    grid-area: r;
+}
+
+/* INTRO */
+
+.intro {
+    width: 100%;
+    height: auto;
+}
+
+.backImg {
+    position: absolute;
+    background-image: url(icons/bord_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 60%;
+    height: 610px;
+    top: 15%;
+    left: 20%
+}
+
+.textBox {
+    position: relative;
+    margin-top: 25%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textBox > h1 {
+    font-family: 'Playfair display';
+    font-size: 6vw;
+    line-height: 4vw;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5vw;
+    line-height: 0.1vw;
+    text-align: center;
+    color: #d68B54;
+}
+
+/* --- RESPONSIVE SCREENS --- */
+
+/* On screens that are 850px or less */
+@media screen and (max-width: 850px) {
+    .backImg {
+        width: 80%;
+        left: 10%;
+    }
+
+    .textBox > h1 {
+        font-family: playfair display;
+        font-size: 8vw;
+        line-height: 5vw;
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-size: 2vw;
+        line-height: 0.2vw;
+        text-align: center;
+        color: #d68B54;
+    }
+  }
+  
