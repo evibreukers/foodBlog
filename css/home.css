@@ -31,7 +31,7 @@
 
 .backImg {
     position: absolute;
-    background-image: url(icons/bord_1.png);
+    background-image: url(/icons/bord_1.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 60%;
