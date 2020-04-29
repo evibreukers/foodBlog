@@ -16,7 +16,11 @@ CSS, HTML
 
 ## 🚀 Preview
 
-https://evibreukers.github.io/foodBlog/
+https://foodblog-htmlcss.netlify.app/html/post.html
+
+![alt text](images/preview1.png)
+![alt text](images/preview2.png)
+![alt text](images/preview3.png)
 
 ENJOY!
 
